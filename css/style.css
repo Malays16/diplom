@@ -530,6 +530,10 @@ img {
   border-right: none;
 }
 
+.search-form-label {
+  flex-grow: 1;
+}
+
 .search-form-button {
   height: 47px;
   width: 47px;
