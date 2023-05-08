@@ -346,7 +346,13 @@
     <div class="shop-items">
       <article class="shop-item">
         <div class="shop-item-img">
-          <img src="images/shop-item-desk1.jpg" alt="розовая подушка">
+          <picture>
+            <source
+              srcset="images/shop-item-desk1.jpg,
+                      images/shop-item-tablet1.jpg,
+                      images/shop-item-mobile1.jpg">
+            <img src="images/shop-item-desk1.jpg" alt="розовая подушка">
+          </picture>
         </div>
         <div class="shop-item-info">
           <h3 class="shop-item-title">Подушки на диван</h3>
@@ -362,7 +368,13 @@
       </article>
       <article class="shop-item">
         <div class="shop-item-img">
-          <img src="images/shop-item-desk2.jpg" alt="Кукла">
+          <picture>
+            <source
+              srcset="images/shop-item-desk2.jpg,
+                      images/shop-item-tablet2.jpg,
+                      images/shop-item-mobile1.jpg">
+            <img src="images/shop-item-desk2.jpg" alt="Кукла">
+          </picture>
         </div>
         <div class="shop-item-info">
           <h3 class="shop-item-title">Кукла зайчик</h3>
@@ -378,7 +390,13 @@
       </article>
       <article class="shop-item">
         <div class="shop-item-img">
+          <picture>
+            <source
+              srcset="images/shop-item-desk3.jpg,
+                      images/shop-item-tablet3.jpg,
+                      images/shop-item-mobile3.jpg">
           <img src="images/shop-item-desk3.jpg" alt="розовая подушка">
+          </picture>
         </div>
         <div class="shop-item-info">
           <h3 class="shop-item-title">Шестиугольная рамка</h3>
@@ -431,12 +449,14 @@
     <div class="modal-content">
       <h2 class="modal-title">Ваш фидбек</h2>
       <form class="modal-form">
-        <p>Как часто вы заходите на сайт</p>
-        <select class="modal-select">
-          <option value="1">Почти каждый день</option>
-          <option value="2">Раз в неделю</option>
-          <div class="custom-arrow">o</div>
-        </select>
+        <p>Как часто вы заходите на сайт?</p>
+        <div class="modal-select-wrapper">
+          <select class="modal-select">
+            <option value="1">Почти каждый день</option>
+            <option value="2">Раз в неделю</option>
+          </select>
+          <div class="custom-arrow"></div>
+        </div>
         <div class="modal-radio">
           <p>Вы подписаны на e-mail рассылку?</p>
           <div class="modal-radio-items">
@@ -454,7 +474,7 @@
           </textarea>
         <buttom type="submit" class="modal-submit-btn">Отправить</buttom>
       </form>
-      <button class="modal-close-btn">x</button>
+      <button class="modal-close-btn" aria-hidden="true"></button>
     </div>
   </div>
 </body>
