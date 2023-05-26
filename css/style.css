@@ -462,6 +462,10 @@ img {
   margin-bottom: 60px;
 }
 
+.aside-block:last-child {
+  margin-bottom: 0;
+}
+
 .aside-title {
   color: #0f0d0e;
   text-align: center;
@@ -669,7 +673,6 @@ img {
 }
 
 .shop-item-info {
-  flex-basis: 270px;
   padding: 50px 20px 0;
   border: 3px solid #b59f5b;
   margin-top: -28px;
@@ -1226,7 +1229,6 @@ input[type="radio"] {
     font-size: 16px;
   }
   .posts-item-text {
-    font-size: 14px;
     padding-bottom: 0;
   }
   .posts-item-title {
