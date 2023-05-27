@@ -447,7 +447,7 @@ img {
 
 .posts-item-text {
   font-size: 15px;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   line-height: 1.4;
   padding-bottom: 20px;
 }
@@ -491,6 +491,10 @@ img {
   margin-bottom: 21px;
 }
 
+.aside-post:last-child {
+  margin-bottom: 0;
+}
+
 .aside-post-img {
   width: 70px;
   margin-right: 17px;
@@ -506,11 +510,11 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
   display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  /* -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; */
 }
 
 .aside-post-title-link:hover {
@@ -852,7 +856,11 @@ img {
 
 .modal-form .modal-select {
   width: 100%;
-  background: #f3f7f6;
+  background-color: #f3f7f6;
+  background-image: url(../svg/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 19px;
+  background-position: center right 15px;
   border: none;
   padding: 20px;
   font-size: 16px;
@@ -933,7 +941,7 @@ img {
   outline: none;
 }
 
-.custom-arrow {
+/* .custom-arrow {
   width: 11px;
   height: 19px;
   top: 20px;
@@ -942,7 +950,7 @@ img {
   background-size: contain;
   position: absolute;
   z-index: 150;
-}
+} */
 
 input[type="radio"]:checked+label::before,
 input[type="radio"]:not(:checked)+label::before {
